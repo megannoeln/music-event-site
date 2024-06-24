@@ -1,0 +1,16 @@
+﻿@model web2.Models.User
+
+@{
+	ViewBag.Title = "More";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p>@Model.FirstName @Model.LastName</p>
+
+
+@using (Html.BeginForm(FormMethod.Post)) {
+	<button id="btnSubmit" name="btnSubmit" value="close"><i class="fa fa-times"></i>Close</button>
+}
+
+
